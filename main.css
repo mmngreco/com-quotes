@@ -1,13 +1,18 @@
 <style type="text/css">
 
-html { height:100%  overflow-y: hidden;}
+html {
+  background: #0000;
+}
+
 body {
+    height: 100%;
     display:block;
     position:absolute;
-    background:#eee;
-    text-align:center;
+    background:#474848;
+    text-align:left;
     padding-top:10%;
     padding-left:10%;
+    padding-right:10%;
     overflow-y: hidden;
     top: 0; right: 0; bottom: 0; left: 0;
 }
@@ -18,8 +23,19 @@ p {
     margin-top: 5px; margin-bottom: 0px;
     text-align: left;
     font-weight: normal;
-    color: #222;
+    color: #FBFBF9;
     text-shadow: 1px -3px 17px rgba(185, 183, 199, 0.94);
 }
+
+.com {
+  color: #80C3EC;
+}
+
+.author {
+  color: #000000;
+  font-family: italic;
+}
+
+
 
 </style>
