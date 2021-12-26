@@ -1,41 +1,90 @@
 <style type="text/css">
 
 html {
-  background: #0000;
+    /* background: #0000; */
+    background:#474848;
 }
 
 body {
     height: 100%;
-    display:block;
-    position:absolute;
-    background:#474848;
-    text-align:left;
-    padding-top:10%;
-    padding-left:10%;
-    padding-right:10%;
+    display: block;
+    position: relative;
+    background: #474848;
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     overflow-y: hidden;
     top: 0; right: 0; bottom: 0; left: 0;
 }
 
+h1 {
+    font-family: 'Sacramento', cursive;
+}
+
 p {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size:24px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
     margin-top: 5px; margin-bottom: 0px;
     text-align: left;
     font-weight: normal;
     color: #FBFBF9;
-    text-shadow: 1px -3px 17px rgba(185, 183, 199, 0.94);
 }
 
 .com {
-  color: #80C3EC;
+    color: #80C3EC;
+    font-family: 'Comfortaa', cursive;
 }
 
 .author {
-  color: #000000;
-  font-family: italic;
+    color: #000000;
+    text-shadow: 0px 0px 20px #ababab;
+    font-style: italic;
+    font-size: 30px;
+
+    /* font-family: 'Corinthia', cursive; */
+    /* font-family: 'Love Light', cursive; */
+    /* font-family: 'Licorice', cursive; */
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Sacramento', cursive;
+
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 46px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 
+.floating {
+    z-index: 1;
+    position: relative;
+    top: 20px;
+    left: -10%;
+    right: 0;
+    padding: 0;
+}
+
 
 </style>
+
