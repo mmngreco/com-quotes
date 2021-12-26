@@ -23,7 +23,8 @@ function choose(choices) {
 function writeQuote(quotes){
     const q = choose(quotes)
     if (page === "quotes-guesser.html"){
-        hideUser('quote', q)
+        overWrite('quote', q)
+        hideAll()
     } else {
         overWrite('quote', q)
     }
@@ -49,28 +50,24 @@ function overWrite(id, value){
 }
 
 
-function hideUser(id, q) {
-    overWrite(id, q)
+function hideAll(){
     const elem = document.getElementsByClassName('author');
     for (var i=0, item; item = elem[i]; i++) {
-        hide(item)
+        hideToggle(item)
     }
+
 }
 
 
-function hide(item){
-    const elem = document.getElementsByClassName('author');
-    for (var i=0, item; item = elem[i]; i++) {
-        if (item.hide) {
-            item.hide = false
-            item.innerText = item.txtbkp
-        } else {
-            item.hide = true
-            item.txtbkp = item.innerText
-            item.innerText = "xxxxx"
-        }
+function hideToggle(item){
+    if (item.hide) {
+        item.hide = false
+        item.innerText = item.txtbkp
+    } else {
+        item.hide = true
+        item.txtbkp = item.innerText
+        item.innerText = "xxxxxxx"
     }
-
 }
 
 function next(){
