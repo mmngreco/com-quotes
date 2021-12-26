@@ -87,7 +87,7 @@ p {
 
 
 footer {
-    font-size: 12px;
+    font-size: 16px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -105,8 +105,9 @@ footer {
     margin-right: 15px;
 }
 
-.mgreco {
+.mmngreco {
     font-family: 'Oooh Baby', cursive;
+    font-size: 22px;
 }
 
 
