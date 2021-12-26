@@ -86,5 +86,70 @@ p {
 }
 
 
+footer {
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    maring-right: 14px;
+    color: white;
+    margin-right: 15px;
+}
+
+.mgreco {
+    font-family: 'Oooh Baby', cursive;
+}
+
+
+.material-icons-foot {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.button {
+    transition-duration: 0.4s;
+    background-color:#474848;
+    color: black;
+    border: 2px solid black;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
 </style>
 

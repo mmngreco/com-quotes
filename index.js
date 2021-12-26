@@ -19,13 +19,15 @@ function choose(choices) {
 
 function writeQuote(quotes){
     const q = choose(quotes)
-    overWrite('quote', q)
+    if (page === "quotes-guesser.html"){
+        hideUser('quote', q)
+    } else {
+        overWrite('quote', q)
+    }
 }
 
 
 function wrapAuthor(quote){
-    // let re = /(<br>)?(\w+[^]*)- /g
-    // let re = /(\w+)(\[.*\])?\s?- /g
     let re = /([a-zA-Z\. ]*)([ \.a-zA-Z]\[.*\])?\s?- /g
     console.log(quote)
     let newQuote = quote.replaceAll(re, '<span class="author">$1</span> - ')
@@ -43,5 +45,30 @@ function overWrite(id, value){
 }
 
 
+function hideUser(id, q) {
+    overWrite(id, q)
+    const elem = document.getElementsByClassName('author');
+    for (var i=0, item; item = elem[i]; i++) {
+        hide(item)
+    }
+}
 
+
+function hide(item){
+    const elem = document.getElementsByClassName('author');
+    for (var i=0, item; item = elem[i]; i++) {
+        if (item.hide) {
+            item.hide = false
+            item.innerText = item.txtbkp
+        } else {
+            item.hide = true
+            item.txtbkp = item.innerText
+            item.innerText = "xxxxx"
+        }
+    }
+
+}
+
+var path = window.location.pathname;
+var page = path.split("/").pop();
 readJson('quotes.json')
