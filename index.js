@@ -1,12 +1,15 @@
 "use strict";
 
+var QUOTES;
+
 function readJson(file) {
     var request = new XMLHttpRequest();
     request.open("GET", file);
     request.responseType = 'json';
     request.send();
     request.onload = function() {
-        writeQuote(request.response);
+        QUOTES = request.response
+        writeQuote(QUOTES);
     };
 }
 
@@ -37,6 +40,7 @@ function wrapAuthor(quote){
 
 function overWrite(id, value){
     const newElem = document.createElement('p');
+    newElem.setAttribute("id", id);
     const elem = document.getElementById(id);
     value = wrapAuthor(value)
     newElem.innerHTML = value;
@@ -67,6 +71,10 @@ function hide(item){
         }
     }
 
+}
+
+function next(){
+    writeQuote(QUOTES)
 }
 
 var path = window.location.pathname;

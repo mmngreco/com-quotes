@@ -2,6 +2,7 @@
 
 html {
     /* background: #0000; */
+    zoom: 160%;
     background:#474848;
 }
 
@@ -24,7 +25,7 @@ h1 {
 
 p {
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 5px; margin-bottom: 0px;
     text-align: left;
     font-weight: normal;
@@ -40,7 +41,7 @@ p {
     color: #000000;
     text-shadow: 0px 0px 20px #ababab;
     font-style: italic;
-    font-size: 30px;
+    font-size: 34px;
 
     /* font-family: 'Corinthia', cursive; */
     /* font-family: 'Love Light', cursive; */
@@ -54,25 +55,7 @@ p {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 46px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-size: 50px;  /* Preferred icon size */
 }
 
 
@@ -80,7 +63,7 @@ p {
     z-index: 1;
     position: relative;
     top: 20px;
-    left: -10%;
+    left: -5%;
     right: 0;
     padding: 0;
 }
@@ -93,16 +76,15 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 20px;
+    padding: 24px;
     background-color: black;
     color: white;
     text-align: center;
 }
 
 .footer {
-    maring-right: 14px;
     color: white;
-    margin-right: 15px;
+    margin-right: 24px;
 }
 
 .mmngreco {
@@ -113,27 +95,8 @@ footer {
 
 .material-icons-foot {
   font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 10px;  /* Preferred icon size */
-  display: inline-block;
+  font-size: 18px;  /* Preferred icon size */
   line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
 }
 
 .button {
