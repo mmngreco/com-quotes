@@ -74,13 +74,8 @@ function next(){
     writeQuote(QUOTES)
 }
 
-function zoomDefault() {
-    document.body.style.zoom=1.4
-}
-
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
-zoomDefault()
 readJson('quotes.json')
 
