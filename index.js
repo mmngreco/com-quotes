@@ -74,7 +74,7 @@ function next(){
     writeQuote(QUOTES)
 }
 
-function zoomDefaul() {
+function zoomDefault() {
     document.body.style.zoom=1.4
 }
 
