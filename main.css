@@ -20,11 +20,11 @@ body {
 }
 
 h1 {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Sacramento', cursive !important;
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif !important;
     font-size: 24px;
     margin-top: 5px; margin-bottom: 0px;
     text-align: left;
@@ -34,7 +34,7 @@ p {
 
 .com {
     color: #80C3EC;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', cursive !important;
 }
 
 .author {
@@ -52,10 +52,20 @@ p {
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: 'Material Icons' !important;
   font-weight: normal;
   font-style: normal;
   font-size: 50px;  /* Preferred icon size */
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 
@@ -88,7 +98,7 @@ footer {
 }
 
 .mmngreco {
-    font-family: 'Oooh Baby', cursive;
+    font-family: 'Oooh Baby', cursive !important;
     font-size: 22px;
 }
 
@@ -97,6 +107,16 @@ footer {
   font-family: 'Material Icons';
   font-size: 18px;  /* Preferred icon size */
   line-height: 1;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 .button {

@@ -60,12 +60,16 @@ function hideAll(){
 
 
 function hideToggle(item){
-    if (item.hide) {
+    const hasHide = item.hasOwnProperty("hide")
+    if (!hasHide) {
+        item.hide = true
+        item.txtbkp = item.innerText
+        item.innerText = "xxxxxxx"
+    } else if (item.hide) {
         item.hide = false
         item.innerText = item.txtbkp
     } else {
         item.hide = true
-        item.txtbkp = item.innerText
         item.innerText = "xxxxxxx"
     }
 }
