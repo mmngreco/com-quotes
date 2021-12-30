@@ -22,7 +22,7 @@ function choose(choices) {
 
 function writeQuote(quotes){
     const q = choose(quotes)
-    if (page === "quotes-guesser"){
+    if (page === "quotes-guesser" || page === "quotes-guesser.html" ){
         overWrite('quote', q)
         hideAll()
     } else {
