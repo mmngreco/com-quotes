@@ -81,7 +81,8 @@ p {
 
 
 #footer {
-    font-size: 16px;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 12px;
     height:15%;   /* Height of the footer */
     position: absolute;
     bottom: 0;
@@ -93,8 +94,22 @@ p {
     text-align: center;
 }
 
-.footer {
+#footer-a {
+    font-size: 14px;
     color: white;
+}
+
+
+.footer-left {
+    float: left;
+    width: 30%;
+    margin-left: 20%;
+}
+
+.footer-right {
+    float: right;
+    width: 30%;
+    margin-right: 20%;
 }
 
 .mmngreco {
@@ -104,7 +119,6 @@ p {
 
 
 .material-icons-foot {
-  font-family: 'Material Icons';
   font-size: 18px;  /* Preferred icon size */
   line-height: 1;
   /* Support for all WebKit browsers. */
