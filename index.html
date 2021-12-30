@@ -9,36 +9,46 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Comfortaa&family=Oswald:wght@300&family=Sacramento&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./main.css">
-        <script src="./index.js" type="text/javascript"></script>
     </head>
     <body>
         <h1> The <span class="com">COM</span> Quotes </h1>
         <hr class="com" color="black">
         <button type="" class="button" onclick="next()">Next</button>
         <div class="floating">
-            <span class="material-icons">format_quote</span>
+            <img class="material-icons" src="./imgs/format_quote_black_24dp.svg" alt="" height="54px">
         </div>
         <p id="quote"></p>
     </body>
 
-    <footer class="footer">
-        <a class="footer" href="./index.html">
-            <span class="material-icons-foot">home</span>
-            HOME
-        </a>
-        <a class="footer" href="./quotes-guesser.html">
-            <span class="material-icons-foot">search</span>
-            QUOTES-GUESSER
-        </a>
-        <br>
-        <br>
-        <span>
-            made
-            with
-            tons of
-            <span class="material-icons-foot">favorite</span>
-            by
-            <span class="mmngreco">mmngreco</span>
-        </span>
-    </footer>
+    <div class="clear"></div>
+    <div id="footer">
+        <div style="">
+            <div style="float: left; width: 30%; margin-left: 20%">
+                <a class="footer" href="./index.html">
+                    <img src="./imgs/home_white_48dp.svg" alt="" style="position: relative; top: 10px;" height="40px">
+                    <br>HOME
+                </a>
+            </div>
+            <div style="float: right; width: 30%; margin-right: 20%">
+                <a class="footer" href="./quotes-guesser.html">
+                    <img src="./imgs/person_search_white_48dp.svg" alt="" style="position: relative; top: 10px" height="44px">
+                    <br>
+                        QUOTES-GUESSER
+                </a>
+            </div>
+        </div>
+        <div>
+            <br>
+            <br style="clear:both;"/>
+            <span>
+                made
+                with
+                tons of
+                <img src="./imgs/favorite_white_48dp.svg" alt="" style="position: relative; top: 10px" height="24px">
+                by
+                <span class="mmngreco">mmngreco</span>
+            </span>
+        </div>
+    </div>
+    <script src="./index.js" type="text/javascript"></script>
 </html>

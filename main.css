@@ -2,19 +2,18 @@
 
 html {
     /* background: #0000; */
-    zoom: 160%;
+    zoom: 140%;
     background:#474848;
 }
 
 body {
     height: 100%;
-    display: block;
-    position: relative;
     background: #474848;
     text-align: left;
-    padding-top: 10%;
-    padding-left: 10%;
+    padding-top: 5%;
+    padding-left: 5%;
     padding-right: 10%;
+    padding-bottom: 60px;
     overflow-y: hidden;
     top: 0; right: 0; bottom: 0; left: 0;
 }
@@ -78,15 +77,17 @@ p {
     padding: 0;
 }
 
+.clear { clear: both; height: 60px; }
 
-footer {
+
+#footer {
     font-size: 16px;
-    position: fixed;
+    height:15%;   /* Height of the footer */
+    position: absolute;
     bottom: 0;
     left: 0;
-    bottom: 0;
     width: 100%;
-    padding: 24px;
+    padding: 10px;
     background-color: black;
     color: white;
     text-align: center;
@@ -94,7 +95,6 @@ footer {
 
 .footer {
     color: white;
-    margin-right: 24px;
 }
 
 .mmngreco {
@@ -120,6 +120,8 @@ footer {
 }
 
 .button {
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif !important;
     transition-duration: 0.4s;
     background-color:#474848;
     color: black;
